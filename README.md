@@ -1,4 +1,6 @@
-# SmsOnlineClient ([🇬🇧](/README.en.md))
+# SmsOnlineClient 
+
+[🇬🇧](/README.en.md)
 
 PHP библиотека, реализующая [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bulk_v2.2_ru.pdf) компании 
  [SmsOnline](sms-online.com)

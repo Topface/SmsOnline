@@ -1,4 +1,6 @@
-# SmsOnlineClient ([🇷🇺](/README.md))
+# SmsOnlineClient 
+
+[🇷🇺](/README.md)
 
 PHP client for [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bulk_v2.2_en.pdf) of 
  [SmsOnline](sms-online.com)
