@@ -79,7 +79,7 @@ final class Message {
     }
 
     /**
-     * @param string[] $phones phone numbers for message
+     * @param int[] $phones phone numbers for message
      * @return $this self instance
      */
     public function setPhones(array $phones) {
@@ -89,11 +89,11 @@ final class Message {
 
     /**
      * Add phone for delivering method
-     * @param string $phone phone number
+     * @param int $phone phone number
      * @return $this self instance
      */
     public function addPhone($phone) {
-        $this->phones[] = $phone;
+        $this->phones[] = (int) $phone;
         $this->phones = array_unique($this->phones);
         return $this;
     }
