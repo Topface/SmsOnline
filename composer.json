@@ -1,0 +1,26 @@
+{
+  "name": "topface/smsonline",
+  "description": "Client for SmsOnline APIs",
+  "keywords": ["api", "sms", "smsonline", "sms online"],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "alxmsl",
+      "email": "alexey.y.maslov@topface.com"
+    }
+  ],
+  "support": {
+    "email": "alexey.y.maslov@topface.com",
+    "issues": "https://github.com/Topface/SmsOnline/issues"
+  },
+  "autoload": {
+    "psr-4": {"Topface\\SmsOnline\\": "source/"}
+  },
+  "require": {
+    "alxmsl/network": ">=1.1.0",
+    "alxmsl/cli": ">=2.0.1"
+  },
+  "require-dev":{
+    "phpunit/phpunit": "4.7.*"
+  }
+}
