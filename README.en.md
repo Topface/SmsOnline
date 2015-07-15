@@ -2,37 +2,37 @@
 
 [🇷🇺](/README.md)
 
-PHP client for [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bulk_v2.2_en.pdf) of 
+PHP client for [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bulk_v2.2_en.pdf) by company 
  [SmsOnline](sms-online.com)
 
 ## Advantages
 
-1. Lightweight. You could use only three classes for work: [API client](/source/Bulk/Client.php), 
+1. Simplicity. To send an SMS, there are 3 classes available: [API client](/source/Bulk/Client.php), 
  [message](/source/Bulk/Message.php) and [response](/source/Bulk/Response.php)
-2. Powerful. You could create one message instance for multiple phones  
-3. `composer` support makes installation simplified
+2. Complete Functionality. You can create one template/sample and use it to send message to multiple users
+3. Built-in as the packet `composer`, this allows a user to connect their library in one line
 4. Independent namespace helps to use API client on different projects and frameworks
-5. [CLI utility](/bin/send.php) helps you to test Bulk API interactions
+5. To quickly send an SMS one can use the [command-line utility](/bin/send.php)
 
 ## Installation
 
-For simplified usage all what you need is require packet via composer
+For quick use, install the packet with the help of `composer`
 
 ```
     $ composer require topface/smsonlineclient
 ```
 
-In third-party projects, require packet in your `composer.json`
+For use in other projects, change `composer.json` by using the following
 
 ```
     "topface/smsonlineclient": "*"
 ```
 
-...and update composer: `composer update`
+Afterwards enter the command: `composer update`
 
 ## Usages
 
-First what you need is client instance. Just create it using you client login, secret and alpha-name
+First a user must create a client instance, as well as determine their login, password, and sender designation
 
 ```
     use Topface\SmsOnline\Bulk\Client;
@@ -40,7 +40,7 @@ First what you need is client instance. Just create it using you client login, s
     $Client = new Client(<from>, <user>, <secret>);
 ```
 
-....then create message and send it
+Afterwards create a sample message and send it
 
 ```
     use Topface\SmsOnline\Bulk\Message;
@@ -53,7 +53,7 @@ First what you need is client instance. Just create it using you client login, s
 
 ## Console usage
 
-You could use script `send.php` to call Sms Bulk API directly
+It's possible to use the script `send.php` to call SMS Bulk API directly
 
 ```
     $ php bin/send.php -h
@@ -66,7 +66,8 @@ You could use script `send.php` to call Sms Bulk API directly
     -u, --user  - sender login
 ```
 
-Using utility you could send messages
+Simply call the script and indicate the required parameters: sender designation, password, login, receiver's phone 
+ number and text for the message
 
 ```
     $ php bin/send.php -f='Company' -p='79031234567,79165557755' -s='secRet' -t='hello' -u='userlogin'
@@ -77,7 +78,7 @@ Using utility you could send messages
             79165557755: 56789012-2222-1111-4466-aabbcc556677
 ```
 
-When something wrong, utility will show error response
+If something goes wrong the script will return an error code and description:
 
 ```
     $ php bin/send.php -f='Company' -p='79031234567,79165557755' -s='wr0NGsecRet' -t='hello' -u='userlogin'
@@ -88,7 +89,7 @@ When something wrong, utility will show error response
 
 ## Tests
 
-For completely tests running just call `phpunit` command
+To initiate a test use this command: `phpunit`
 
 ```
     $ phpunit
@@ -105,9 +106,8 @@ For completely tests running just call `phpunit` command
 
 ## Contributing
 
-Contributing are welcome. 
-We accepts contributions via pull requests.
-Please, add tests for you patches and document any changes in library behaviour
+We welcome any help in developing this project. We accept contributions as pull requests. Finally, we kindly ask that 
+ you add your tests and document all changes in library behavior/corrections.
 
 ## License
 
