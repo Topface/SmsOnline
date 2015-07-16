@@ -1,6 +1,8 @@
 # SmsOnlineClient 
 
 [🇬🇧](/README.en.md)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Build Status](https://travis-ci.org/Topface/SmsOnline.svg?branch=v1.0.0)](https://travis-ci.org/Topface/SmsOnline)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Topface/SmsOnline/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Topface/SmsOnline/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/Topface/SmsOnline/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Topface/SmsOnline/?branch=master)
