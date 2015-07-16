@@ -25,14 +25,14 @@ final class Message {
     /**
      * Message statuses
      */
-    const STATUS_DELIVERED     = 0,
-          STATUS_BUFFERED      = 1,
-          STATUS_ABSENT        = 2,
-          STATUS_PREPARING     = 3,
-          STATUS_UNKNOWN       = 4,
-          STATUS_NOT_DELIVERED = -1,
-          STATUS_EXPIRED       = -2,
-          STATUS_REJECTED      = -3;
+    const STATUS_DELIVERED     = 0,  // the message was delivered to the subscriber
+          STATUS_BUFFERED      = 1,  // the message is queued at SMSC
+          STATUS_ABSENT        = 2,  // the subscriber is out of coverage. Message is queued
+          STATUS_PREPARING     = 3,  // the message is being prepared for delivery
+          STATUS_UNKNOWN       = 4,  // no reply from mobile network operator
+          STATUS_NOT_DELIVERED = -1, // message was not delivered
+          STATUS_EXPIRED       = -2, // message expired and deleted from the SMSC
+          STATUS_REJECTED      = -3; // delivery rejected by the mobile network operator
 
     /**
      * Maximum message delay, seconds

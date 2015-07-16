@@ -105,11 +105,7 @@ final class Client {
      * @codeIgnoreCoverage
      */
     public function send(Message $Message) {
-        try {
-            return Response::initializeByString($this->createRequest($Message)->send());
-        } catch (HttpCodeException $Ex) {
-            return $Ex->getMessage();
-        }
+        return Response::initializeByString($this->createRequest($Message)->send());
     }
 
     /**

@@ -27,12 +27,12 @@ final class Response implements InitializationInterface {
     /**
      * Response status codes
      */
-    const CODE_OK                   = 0,
-          CODE_INCORRECT_DATA       = -1,
-          CODE_AUTHENTICATION_ERROR = -2,
-          CODE_REJECTED             = -3,
-          CODE_TECHNICAL_ERROR      = -4,
-          CODE_LIMIT_REACHED        = -5;
+    const CODE_OK                   = 0,  // the request was proceed successfully
+          CODE_INCORRECT_DATA       = -1, // incorrect input data
+          CODE_AUTHENTICATION_ERROR = -2, // authentication error
+          CODE_REJECTED             = -3, // request processing is rejected
+          CODE_TECHNICAL_ERROR      = -4, // temporary technical error
+          CODE_LIMIT_REACHED        = -5; // you have no more sms on your account
 
     /**
      * @var int response code
