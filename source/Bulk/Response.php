@@ -27,7 +27,7 @@ final class Response implements InitializationInterface {
     /**
      * Response status codes
      */
-    const CODE_OK                   = 0,  // the request was proceed successfully
+    const CODE_OK                   = 0, // the request was proceed successfully
           CODE_INCORRECT_DATA       = -1, // incorrect input data
           CODE_AUTHENTICATION_ERROR = -2, // authentication error
           CODE_REJECTED             = -3, // request processing is rejected
@@ -88,7 +88,7 @@ final class Response implements InitializationInterface {
         $Response->code    = (int) $Object->code;
         $Response->message = (string) $Object->tech_message;
         if (isset($Object->msg_id)) {
-            foreach($Object->msg_id as $node) {
+            foreach ($Object->msg_id as $node) {
                 $Response->messageIds[(string) $node['phone']] = (string) $node;
             }
         }
