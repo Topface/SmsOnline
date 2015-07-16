@@ -2,6 +2,8 @@
 
 [🇬🇧](/README.en.md)
 [![Build Status](https://travis-ci.org/Topface/SmsOnline.svg?branch=v1.0.0)](https://travis-ci.org/Topface/SmsOnline)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Topface/SmsOnline/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Topface/SmsOnline/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/Topface/SmsOnline/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Topface/SmsOnline/?branch=master)
 
 PHP библиотека, реализующая [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bulk_v2.2_ru.pdf) компании 
  [SmsOnline](sms-online.com)
