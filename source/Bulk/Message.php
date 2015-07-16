@@ -25,11 +25,11 @@ final class Message {
     /**
      * Message statuses
      */
-    const STATUS_DELIVERED     = 0,  // the message was delivered to the subscriber
-          STATUS_BUFFERED      = 1,  // the message is queued at SMSC
-          STATUS_ABSENT        = 2,  // the subscriber is out of coverage. Message is queued
-          STATUS_PREPARING     = 3,  // the message is being prepared for delivery
-          STATUS_UNKNOWN       = 4,  // no reply from mobile network operator
+    const STATUS_DELIVERED     = 0, // the message was delivered to the subscriber
+          STATUS_BUFFERED      = 1, // the message is queued at SMSC
+          STATUS_ABSENT        = 2, // the subscriber is out of coverage. Message is queued
+          STATUS_PREPARING     = 3, // the message is being prepared for delivery
+          STATUS_UNKNOWN       = 4, // no reply from mobile network operator
           STATUS_NOT_DELIVERED = -1, // message was not delivered
           STATUS_EXPIRED       = -2, // message expired and deleted from the SMSC
           STATUS_REJECTED      = -3; // delivery rejected by the mobile network operator
@@ -213,11 +213,11 @@ final class Message {
      */
     public function export() {
         $data = [
-            'charset=' .  rawurlencode($this->getCharset()),
-            'delay='   .  $this->delay,
-            'dlr='     .  ($this->needDeliveryReport ? self::DELIVERY_REPORT : self::NO_DELIVERY_REPORT),
-            'hex='     .  $this->type,
-            'txt='     .  $this->getText(),
+            'charset=' . rawurlencode($this->getCharset()),
+            'delay=' . $this->delay,
+            'dlr=' . ($this->needDeliveryReport ? self::DELIVERY_REPORT : self::NO_DELIVERY_REPORT),
+            'hex=' . $this->type,
+            'txt=' . $this->getText(),
         ];
         foreach ($this->getPhones() as $phone) {
             $data[] = 'phone=' . rawurlencode($phone);
