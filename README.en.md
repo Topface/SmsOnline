@@ -1,6 +1,7 @@
 # SmsOnlineClient 
 
 [🇷🇺](/README.md)
+[![Build Status](https://travis-ci.org/Topface/SmsOnline.svg?branch=v1.0.0)](https://travis-ci.org/Topface/SmsOnline)
 
 PHP client for [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bulk_v2.2_en.pdf) by company 
  [SmsOnline](sms-online.com)
