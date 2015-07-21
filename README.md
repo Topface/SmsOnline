@@ -23,13 +23,13 @@ PHP библиотека, реализующая [SMS Bulk API v2.2](http://ru.s
 Для простого использования получите пакет через `composer`
 
 ```
-    $ composer require topface/smsonlineclient
+    $ composer require topface/smsonline
 ```
 
 При использовании в стороннем проекте, измените `composer.json` следующим образом
 
 ```
-    "topface/smsonlineclient": "*"
+    "topface/smsonline": "*"
 ```
 
 Затем выполните команду `composer update`
