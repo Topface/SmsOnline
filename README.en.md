@@ -24,13 +24,13 @@ PHP client for [SMS Bulk API v2.2](http://ru.sms-online.com/doc/smsonline_sms_bu
 For quick use, install the packet with the help of `composer`
 
 ```
-    $ composer require topface/smsonlineclient
+    $ composer require topface/smsonline
 ```
 
 For use in other projects, change `composer.json` by using the following
 
 ```
-    "topface/smsonlineclient": "*"
+    "topface/smsonline": "*"
 ```
 
 Afterwards enter the command: `composer update`
