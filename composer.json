@@ -14,7 +14,7 @@
     "issues": "https://github.com/Topface/SmsOnline/issues"
   },
   "autoload": {
-    "psr-4": {"Topface\\SmsOnline\\": "source/"}
+    "psr-4": {"TopfaceLibrary\\SmsOnline\\": "source/"}
   },
   "require": {
     "alxmsl/network": ">=1.1.0",

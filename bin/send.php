@@ -20,8 +20,8 @@
 
 include __DIR__ . '/../vendor/autoload.php';
 
-use Topface\SmsOnline\Bulk\Client;
-use Topface\SmsOnline\Bulk\Message;
+use TopfaceLibrary\SmsOnline\Bulk\Client;
+use TopfaceLibrary\SmsOnline\Bulk\Message;
 use alxmsl\Cli\CommandPosix;
 use alxmsl\Cli\Option;
 use alxmsl\Cli\Exception\RequiredOptionException;

@@ -15,9 +15,8 @@
  * limitations under the License.
  */
 
-namespace Topface\SmsOnline\Bulk;
+namespace TopfaceLibrary\SmsOnline\Bulk;
 
-use alxmsl\Network\Exception\HttpCodeException;
 use alxmsl\Network\Http\Request;
 
 /**

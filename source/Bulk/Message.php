@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace Topface\SmsOnline\Bulk;
+namespace TopfaceLibrary\SmsOnline\Bulk;
 
 /**
  * Message class

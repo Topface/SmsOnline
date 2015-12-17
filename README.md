@@ -39,7 +39,7 @@ PHP библиотека, реализующая [SMS Bulk API v2.2](http://ru.s
 Для начала необходимо создать сущность клиента, определив его логин, секретный ключ и наименование отправителя
 
 ```
-    use Topface\SmsOnline\Bulk\Client;
+    use TopfaceLibrary\SmsOnline\Bulk\Client;
     
     $Client = new Client(<from>, <user>, <secret>);
 ```
@@ -47,7 +47,7 @@ PHP библиотека, реализующая [SMS Bulk API v2.2](http://ru.s
 Затем создайте экземпляр сообщения и просто отправьте его
 
 ```
-    use Topface\SmsOnline\Bulk\Message;
+    use TopfaceLibrary\SmsOnline\Bulk\Message;
 
     $Message = new Message('hello');
     $Message->addPhone(79031234567);

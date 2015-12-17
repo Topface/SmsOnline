@@ -1,9 +1,9 @@
 <?php
 
-namespace Topface\Test\SmsOnline\Bulk;
+namespace TopfaceLibrary\Test\SmsOnline\Bulk;
 
 use PHPUnit_Framework_TestCase;
-use Topface\SmsOnline\Bulk\Response;
+use TopfaceLibrary\SmsOnline\Bulk\Response;
 
 /**
  * Response class tests

@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-namespace Topface\SmsOnline\Bulk;
+namespace TopfaceLibrary\SmsOnline\Bulk;
 
-use Topface\SmsOnline\InitializationInterface;
+use TopfaceLibrary\SmsOnline\InitializationInterface;
 
 /**
  * Response class

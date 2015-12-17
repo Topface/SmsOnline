@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-namespace Topface\Test\SmsOnline\Bulk;
+namespace TopfaceLibrary\Test\SmsOnline\Bulk;
 
 use alxmsl\Network\Http\Request;
 use PHPUnit_Framework_TestCase;
 use ReflectionClass;
-use Topface\SmsOnline\Bulk\Client;
-use Topface\SmsOnline\Bulk\Message;
+use TopfaceLibrary\SmsOnline\Bulk\Client;
+use TopfaceLibrary\SmsOnline\Bulk\Message;
 
 /**
  * Client class tests
