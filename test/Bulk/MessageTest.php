@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-namespace Topface\Test\SmsOnline\Bulk;
+namespace TopfaceLibrary\Test\SmsOnline\Bulk;
 
 use PHPUnit_Framework_TestCase;
-use Topface\SmsOnline\Bulk\Message;
+use TopfaceLibrary\SmsOnline\Bulk\Message;
 
 /**
  * Message class tests

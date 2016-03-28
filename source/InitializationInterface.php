@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace Topface\SmsOnline;
+namespace TopfaceLibrary\SmsOnline;
 
 /**
  * Interface for self-initialization objects

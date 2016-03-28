@@ -40,7 +40,7 @@ Afterwards enter the command: `composer update`
 First a user must create a client instance, as well as determine their login, password, and sender designation
 
 ```
-    use Topface\SmsOnline\Bulk\Client;
+    use TopfaceLibrary\SmsOnline\Bulk\Client;
     
     $Client = new Client(<from>, <user>, <secret>);
 ```
@@ -48,7 +48,7 @@ First a user must create a client instance, as well as determine their login, pa
 Afterwards create a sample message and send it
 
 ```
-    use Topface\SmsOnline\Bulk\Message;
+    use TopfaceLibrary\SmsOnline\Bulk\Message;
 
     $Message = new Message('hello');
     $Message->addPhone(79031234567);
